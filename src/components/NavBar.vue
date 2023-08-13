@@ -1,13 +1,4 @@
-<script setup lang="ts">
-function toTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  })
-}
 
-const { y: scroll } = useWindowScroll()
-</script>
 <template>
   <div class="container">
     <header class="header">
@@ -221,6 +212,15 @@ const { y: scroll } = useWindowScroll()
 </style>
 
 <script>
+function toTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
+}
+
+const { y: scroll } = useWindowScroll()
+
 export default {
   name: "Header",
   data() {
