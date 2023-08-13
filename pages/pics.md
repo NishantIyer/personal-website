@@ -1,0 +1,5 @@
+---
+plum: true
+---
+
+<PicsPage />
